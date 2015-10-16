@@ -12,19 +12,19 @@ public class PlayerMove : BaseMove
 	{
 		if(Input.GetKey(KeyCode.W))
 		{
-			move(Vector3.forward, speed);
+			move(transform.forward, speed);
 		}
 		else if (Input.GetKey(KeyCode.S))
 		{
-			move(-Vector3.forward, speed);
+			move(-transform.forward, speed);
 		}
 		if(Input.GetKey(KeyCode.A))
 		{
-			move(-Vector3.right, speed);
+			move(-transform.right, speed);
 		}
 		else if(Input.GetKey(KeyCode.D))
 		{
-			move(Vector3.right, speed);
+			move(transform.right, speed);
 		}
 	}
 	

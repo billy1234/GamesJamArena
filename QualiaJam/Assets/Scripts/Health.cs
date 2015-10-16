@@ -10,28 +10,40 @@ public class Health : MonoBehaviour
 	{
 		health += maxHealth;
 	}
-	
-	// Update is called once per frame
+
+	/*
 	void Update () 
 	{
 		checkHealth();
 	}
-	
-	private void checkHealth()
+
+
+	private void checkHealth()this is inside of the take dmg function now
 	{
 		if(health <= 0)
 		{
 			death ();
 		}	
 	}
-	
+	*/
+
 	public void takeDamage(int damageAmount)
 	{
-		health -= damageAmount;
+		health -= Mathf.Abs(damageAmount);
+		if(health <= 0)
+		{
+			death ();
+		}
 	}
-	
-	protected virtual void death()
+
+	protected virtual void death()//IF PLAYER DO SUM SHITE
 	{
-		print ("Player Died");
+		print (this+" has Died");
+		BaseAi myAI = gameObject.GetComponent<BaseAi>();
+		if(myAI != null)
+		{
+			myAI.StopAllCoroutines();
+		}
+		gameObject.SetActive(false);
 	}
 }
