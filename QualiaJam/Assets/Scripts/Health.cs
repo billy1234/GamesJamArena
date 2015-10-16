@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
 	}
 	*/
 
-	public void takeDamage(int damageAmount)
+	public virtual void takeDamage(int damageAmount)
 	{
 		health -= Mathf.Abs(damageAmount);
 		if(health <= 0)

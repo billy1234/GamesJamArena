@@ -2,7 +2,7 @@
 using System.Collections;
 public enum AISTATE
 {
-	MELE
+	MELE,VUNRABLE,RANGED
 };
 [RequireComponent(typeof(NavMeshAgent))]
 public class BaseAi : MonoBehaviour 
@@ -30,7 +30,7 @@ public class BaseAi : MonoBehaviour
 
 	protected virtual void decision()
 	{
-		switch(state)
+		switch(state)//base ai is only mele
 		{
 			case AISTATE.MELE:
 				//print ("IN MELE");
