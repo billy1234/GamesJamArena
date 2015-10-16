@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMove : BaseMove 
+public class PlayerMove : BaseMove
 {
 	void Update()
 	{

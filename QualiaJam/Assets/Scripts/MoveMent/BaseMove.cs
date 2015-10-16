@@ -12,8 +12,8 @@ abstract public class BaseMove : MonoBehaviour
 		rb = this.gameObject.GetComponent<Rigidbody>();
 	}
 
-	protected void move(Vector3 direction, float speed)
+	protected void move(Vector3 direction, float speed)//do we need to pass speed
 	{
-		rb.AddForce(direction * speed);
+		rb.AddForce(direction * speed * Time.deltaTime * 100);//100 so the inspector numb isnt spatic
 	}
 }

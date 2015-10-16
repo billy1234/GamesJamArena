@@ -7,7 +7,7 @@ public class DamageOnCollision : MonoBehaviour
 	public bool knockBack;
 	public float knockBackForce;
 
-	void OnCollisionEnter(Collision col)
+	private void OnCollisionEnter(Collision col)
 	{
 
 		onCollide(col.gameObject);
@@ -25,6 +25,7 @@ public class DamageOnCollision : MonoBehaviour
 				Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
 				if(rb != null)
 				{
+					rb.velocity = Vector3.zero;
 					rb.AddForce((other.gameObject.transform.position - transform.position).normalized * knockBackForce,ForceMode.Impulse);
 				}
 			}
