@@ -9,20 +9,25 @@ public class DamageOnCollision : MonoBehaviour
 
 	void OnCollisionEnter(Collision col)
 	{
-		Health other = col.gameObject.GetComponent<Health>();
-		if(other != null)
+
+		onCollide(col.gameObject);
+
+	}
+
+	protected virtual void onCollide(GameObject other)
+	{
+		Health otherHp = other.gameObject.GetComponent<Health>();
+		if(otherHp != null)
 		{
-			other.takeDamage(damage);
+			otherHp.takeDamage(damage);
 			if(knockBack)
 			{
-				Rigidbody rb = col.gameObject.GetComponent<Rigidbody>();
+				Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
 				if(rb != null)
 				{
-					rb.AddForce((col.gameObject.transform.position - transform.position).normalized * knockBackForce,ForceMode.Impulse);
+					rb.AddForce((other.gameObject.transform.position - transform.position).normalized * knockBackForce,ForceMode.Impulse);
 				}
 			}
 		}
-		//bounce him back
-
 	}
 }
