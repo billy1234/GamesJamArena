@@ -1,16 +1,54 @@
 fileFormatVersion: 2
-guid: 933e6b1493fa8f640b8fa54aae78e435
-timeCreated: 1445043392
+guid: e7e2c30b9832d8e4493cdbb249b71d7c
+timeCreated: 1445078943
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: RoadKillOut
+    100000: back
+    100002: Dummy001
+    100004: Dummy002
+    100006: Dummy003
+    100008: head
+    100010: IMP
+    100012: Left arm
+    100014: Left foot
+    100016: Left leg
+    100018: Left shoulder
+    100020: Left wing
+    100022: lower back
+    100024: Right arm
+    100026: Right foot
+    100028: Right leg
+    100030: right shoulder
+    100032: Right wing
+    100034: tail a
+    100036: tail b
+    100038: //RootNode
+    400000: back
+    400002: Dummy001
+    400004: Dummy002
+    400006: Dummy003
+    400008: head
+    400010: IMP
+    400012: Left arm
+    400014: Left foot
+    400016: Left leg
+    400018: Left shoulder
+    400020: Left wing
+    400022: lower back
+    400024: Right arm
+    400026: Right foot
+    400028: Right leg
+    400030: right shoulder
+    400032: Right wing
+    400034: tail a
+    400036: tail b
+    400038: //RootNode
+    4300000: IMP
+    7400000: Take 001
     9500000: //RootNode
+    13700000: IMP
   materials:
     importMaterials: 1
     materialName: 0
@@ -34,7 +72,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 15
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
