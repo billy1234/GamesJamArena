@@ -36,7 +36,7 @@ public class XboxControler : BaseMove
 		direction.z = Input.GetAxis("L_YAxis_1");
 		direction.x = -Input.GetAxis("L_XAxis_1");
 		move(transform.rotation * direction, speed);
-		transform.Rotate(0,Input.GetAxis("R_XAxis_1") * turnSpeed,0);
+		rotate(Input.GetAxis("R_XAxis_1") * turnSpeed);
 		float maymay =Input.GetAxis("TriggersR_1");
 		if(maymay != 0)
 		{
@@ -52,7 +52,7 @@ public class XboxControler : BaseMove
 		direction.z = Input.GetAxis("L_YAxis_2");
 		direction.x = -Input.GetAxis("L_XAxis_2");
 		move(transform.rotation * direction, speed);
-		transform.Rotate(0,Input.GetAxis("R_XAxis_2") * turnSpeed,0);
+		rotate(Input.GetAxis("R_XAxis_2") * turnSpeed);
 		float maymay =Input.GetAxis("TriggersR_2");
 		if(maymay != 0)
 		{

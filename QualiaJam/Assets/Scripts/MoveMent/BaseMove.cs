@@ -14,6 +14,17 @@ abstract public class BaseMove : MonoBehaviour
 
 	protected void move(Vector3 direction, float speed)//do we need to pass speed
 	{
-		rb.AddForce(direction * speed * Time.deltaTime * 100);//100 so the inspector numb isnt spatic
+			//CLMAP directon BASED ON velocitys mag
+		if(direction == Vector3.zero)
+			return;
+
+		rb.MovePosition(transform.position + (direction * speed * Time.deltaTime * 100));//100 so the inspector numb isnt spatic
+
 	}
+
+	protected void rotate(float angle)
+	{
+		transform.Rotate(0,angle,0);
+	}
+	
 }
