@@ -27,25 +27,30 @@ public class BossAI : BaseAi
 			myHp.vunrable = true;
 			myAgent.Stop();
 				break;
-			
+
 		}
 	}
 
-	protected void exitConditions()
+	/*protected void exitConditions()
 	{
-		timeTillExit -= Time.deltaTime;//lol this isnt legit at all
+		timeTillExit -= 1;//ai ticks till next condition
 		switch(state)
 		{
 			case AISTATE.MELE:
-				//print ("IN MELE");
-				myAgent.SetDestination(target.position);
+				if(timeTillExit <= 0)
+				{
+					state = AISTATE.RANGED;
+					timeTillExit = 
+				}
 				break;
 			case AISTATE.VUNRABLE:
-				//need visual feedback
-				myHp.vunrable = true;
-				myAgent.Stop();
+			if(timeTillExit <= 0)
+			{
+				state = AISTATE.RANGED;
+			}
 				break;
 			
 		}
 	}
+	*/
 }

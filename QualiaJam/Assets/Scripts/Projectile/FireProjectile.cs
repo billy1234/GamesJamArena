@@ -1,31 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class FireProjectile : MonoBehaviour 
 {
 	public GameObject projectile;
 	public float fireSpeed;
-	// Use this for initialization
-	void Start () {
+	public Transform hand;
+	protected bool canFire = true;
+	public float fireRate =3f;
 
-	}
-	
-	// Update is called once per frame
-	void Update () 
+
+	public void fire()
 	{
-		if(Input.GetMouseButtonDown(0))
+		if(canFire)
 		{
-			fire();
+			GameObject bulletInstance = Instantiate(projectile, hand.position, transform.rotation) as GameObject;
+			bulletInstance.GetComponent<ProjectileMove>().speed += fireSpeed;
+			StartCoroutine(coolDown());
 		}
 	}
-	
-	private void fire()
+
+	private IEnumerator coolDown()
 	{
-		Vector3 mosPos = Input.mousePosition;
-		mosPos.z += 10f;
-		Vector3 currentPos = Camera.main.ScreenToWorldPoint(mosPos);
-	
-		GameObject bulletInstance = Instantiate(projectile, currentPos, Quaternion.identity) as GameObject;
-		bulletInstance.GetComponent<ProjectileMove>().speed += fireSpeed;
+		canFire = false;
+		yield return new WaitForSeconds(fireRate);
+		canFire = true;
 	}
 }

@@ -9,7 +9,7 @@ public class HealthPickUp : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			other.gameObject.GetComponent<Health>().addHealth(healthBonus);
+			//other.gameObject.GetComponent<Health>().addHealth(healthBonus);
 		}
 	}
 }
