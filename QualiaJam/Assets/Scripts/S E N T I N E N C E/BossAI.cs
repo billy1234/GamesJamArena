@@ -6,17 +6,24 @@ public struct exitTimes
 {
 	public int meleExitTime;
 	public int vunrableExitTime;
+	public int rangedExitTime;
 }
 [RequireComponent(typeof(BossHeath))]
+[RequireComponent(typeof(FireProjectile))]
 public class BossAI : BaseAi
 {
 	protected BossHeath myHp;
 	protected int timeTillExit =10;
 	public exitTimes sateDurations;
+	public float turnSpeed;
+	public float projectileMaxAngle;
+	private FireProjectile myFire;
+	public float rangedMinDistance =5f;
 	protected override void Awake()
 	{
 		base.Awake();
 		myHp = GetComponent<BossHeath>();
+		state = AISTATE.RANGED;
 	}
 
 	protected override void decision ()
@@ -29,9 +36,31 @@ public class BossAI : BaseAi
 			break;
 		case AISTATE.VUNRABLE:
 			//need visual feedback
-
 			myAgent.Stop();
 				break;
+		case AISTATE.RANGED:
+			//print (Vector3.Distance(transform.position, target.position));
+			if(Vector3.Distance(transform.position, target.position) >rangedMinDistance)
+			{
+				myAgent.Stop();
+				print ("in range");
+				if ( Vector3.Angle(target.transform.forward, transform.position - target.transform.position) < projectileMaxAngle)
+				{
+					print ("shooting");
+					myFire.fire();
+				}
+				else
+				{
+					print ("aiming");
+					LookAt(target.position);
+				}
+			}
+			else
+			{
+				print ("im gosu dat kite");
+				myAgent.SetDestination((transform.position - target.position).normalized *5f);
+			}
+			break;
 
 		}
 		exitConditions();
@@ -47,8 +76,16 @@ public class BossAI : BaseAi
 				case AISTATE.MELE:
 				print ("switched To vunrable");
 					myHp.vunrable = true;
-					state = AISTATE.VUNRABLE;
-					timeTillExit = sateDurations.vunrableExitTime;
+					if(Random.Range(0,2) == 0)
+					{
+						state = AISTATE.VUNRABLE;
+						timeTillExit = sateDurations.vunrableExitTime;
+					}
+					else
+					{
+					state = AISTATE.RANGED;
+					timeTillExit = sateDurations.rangedExitTime;
+					}
 					break;
 				case AISTATE.VUNRABLE:
 				print ("switched To mele");
@@ -56,8 +93,21 @@ public class BossAI : BaseAi
 					state = AISTATE.MELE;
 					timeTillExit = sateDurations.meleExitTime;
 					break;
+			case AISTATE.RANGED:
+				myHp.vunrable = false;
+				state = AISTATE.MELE;
+				timeTillExit = sateDurations.meleExitTime;
+				break;
 			}
 			
 		}
+	}
+
+	void LookAt (Vector3 position)//rotation copy pasta
+	{
+		// Where we want to go
+		Quaternion rotation = Quaternion.LookRotation(position - transform.position);
+		// Move slowly from our rotation to the rotation we want to go to by the damping slowness
+		transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * turnSpeed);
 	}
 }

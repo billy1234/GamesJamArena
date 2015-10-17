@@ -1,31 +1,74 @@
 ﻿using UnityEngine;
 using System.Collections;
+[System.Serializable]
+public struct shakeCamera
+{
+    public bool active;
+    public Camera myCam;
+    public int frameDuration;
+}
 
 public class FireProjectile : MonoBehaviour 
 {
-	public GameObject projectile;
-	public float fireSpeed;
-	// Use this for initialization
-	void Start () {
+    public GameObject projectile;
+    public float fireSpeed;
+    public Transform hand;
+    protected bool canFire = true;
+    public float fireRate =3f;
+    public shakeCamera camShakeSettings;
+    private Quaternion oldRoataion;
+    void Awake()
+    {
+        if(camShakeSettings.active)
+        {
+            oldRoataion = camShakeSettings.myCam.transform.localRotation;
+        }
+    }
+    public void fire()
+    {
+        if(canFire)
+        {
+            GameObject bulletInstance = Instantiate(projectile, hand.position, transform.rotation) as GameObject;
+            bulletInstance.GetComponent<ProjectileMove>().speed += fireSpeed;
+            StartCoroutine(coolDown());
+            StartCoroutine(shakeCam());
+        }
+    }
+	
+    private IEnumerator coolDown()
+    {
+        canFire = false;
+        yield return new WaitForSeconds(fireRate);
+        canFire = true;
+        restoreCamera();
+    }
 
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		if(Input.GetMouseButtonDown(0))
-		{
-			fire();
-		}
-	}
-	
-	public virtual void fire()
-	{
-		Vector3 mosPos = Input.mousePosition;
-		mosPos.z += 10f;
-		Vector3 currentPos = Camera.main.ScreenToWorldPoint(mosPos);
-	
-		GameObject bulletInstance = Instantiate(projectile, currentPos, Quaternion.identity) as GameObject;
-		bulletInstance.GetComponent<ProjectileMove>().speed += fireSpeed;
-	}
+    void shakeCamera()
+    {
+        if(!camShakeSettings.active)
+            return;
+        StopCoroutine("shakeCam()");
+        StartCoroutine("shakeCam()");
+            
+    }
+
+    private IEnumerator shakeCam()
+    {
+
+        for(int i =0; i < camShakeSettings.frameDuration; i++)
+        {
+            camShakeSettings.myCam.transform.Rotate(Random.insideUnitSphere);
+            yield return 0;
+        }
+        restoreCamera();
+
+    }
+
+    void restoreCamera()
+    {
+        if(camShakeSettings.active)
+        {
+            camShakeSettings.myCam.transform.localRotation = oldRoataion;
+        }
+    }
 }
