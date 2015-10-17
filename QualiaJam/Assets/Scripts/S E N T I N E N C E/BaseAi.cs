@@ -13,7 +13,7 @@ public class BaseAi : MonoBehaviour
 	public Transform target;
 
 
-	void Awake ()
+	protected virtual void Awake ()
 	{
 		myAgent = GetComponent<NavMeshAgent>();
 		StartCoroutine(main());

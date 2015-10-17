@@ -1,16 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
+[System.Serializable]
+public struct exitTimes
+{
+	public int meleExitTime;
+	public int vunrableExitTime;
+}
 [RequireComponent(typeof(BossHeath))]
 public class BossAI : BaseAi
 {
 	protected BossHeath myHp;
-	public float vunrableTime =3f;
-	protected float timeTillExit =0f;
-
-	void Awake()
+	protected int timeTillExit =10;
+	public exitTimes sateDurations;
+	protected override void Awake()
 	{
+		base.Awake();
 		myHp = GetComponent<BossHeath>();
 	}
 
@@ -24,33 +29,35 @@ public class BossAI : BaseAi
 			break;
 		case AISTATE.VUNRABLE:
 			//need visual feedback
-			myHp.vunrable = true;
+
 			myAgent.Stop();
 				break;
 
 		}
+		exitConditions();
 	}
 
-	/*protected void exitConditions()
+	protected void exitConditions()
 	{
 		timeTillExit -= 1;//ai ticks till next condition
-		switch(state)
+		if(timeTillExit <= 0)
 		{
-			case AISTATE.MELE:
-				if(timeTillExit <= 0)
-				{
-					state = AISTATE.RANGED;
-					timeTillExit = 
-				}
-				break;
-			case AISTATE.VUNRABLE:
-			if(timeTillExit <= 0)
+			switch(state)
 			{
-				state = AISTATE.RANGED;
+				case AISTATE.MELE:
+				print ("switched To vunrable");
+					myHp.vunrable = true;
+					state = AISTATE.VUNRABLE;
+					timeTillExit = sateDurations.vunrableExitTime;
+					break;
+				case AISTATE.VUNRABLE:
+				print ("switched To mele");
+					myHp.vunrable = false;
+					state = AISTATE.MELE;
+					timeTillExit = sateDurations.meleExitTime;
+					break;
 			}
-				break;
 			
 		}
 	}
-	*/
 }

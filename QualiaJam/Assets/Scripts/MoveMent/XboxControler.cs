@@ -21,7 +21,7 @@ public class XboxControler : BaseMove
 		switch(player)
 		{
 			case PLAYER.PLAYER1:
-					player1Input();
+				player1Input();
 			break;
 
 			case PLAYER.PLAYER2:
@@ -38,8 +38,10 @@ public class XboxControler : BaseMove
 		move(transform.rotation * direction, speed);
 		transform.Rotate(0,Input.GetAxis("R_XAxis_1") * turnSpeed,0);
 		float maymay =Input.GetAxis("TriggersR_1");
+		print (maymay);
 		if(maymay != 0)
 		{
+			print ("da lamo");
 			print (maymay + this.name);
 			//print(Input.GetAxis("TriggersR_1" )+ this.name);
 			myProjectile.fire();
