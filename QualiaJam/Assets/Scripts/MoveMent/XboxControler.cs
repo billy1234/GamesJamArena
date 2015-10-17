@@ -38,11 +38,9 @@ public class XboxControler : BaseMove
 		move(transform.rotation * direction, speed);
 		transform.Rotate(0,Input.GetAxis("R_XAxis_1") * turnSpeed,0);
 		float maymay =Input.GetAxis("TriggersR_1");
-		print (maymay);
 		if(maymay != 0)
 		{
-			print ("da lamo");
-			print (maymay + this.name);
+
 			//print(Input.GetAxis("TriggersR_1" )+ this.name);
 			myProjectile.fire();
 		}
@@ -58,7 +56,7 @@ public class XboxControler : BaseMove
 		float maymay =Input.GetAxis("TriggersR_2");
 		if(maymay != 0)
 		{
-			print (maymay + this.name);
+			//print (maymay + this.name);
 			//print(Input.GetAxis("TriggersR_2")+ this.name);
 			myProjectile.fire();
 		}
