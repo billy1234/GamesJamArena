@@ -3,9 +3,11 @@ using System.Collections;
 
 public class ProjectileCollision : DamageOnCollision
 {	
-	protected override void onCollide (GameObject other)
+	/*
+	public override void OnCollisionEnter (Collision col)
 	{
-		base.onCollide (other);
+		base.OnCollisionEnter (col);
 		Destroy(gameObject);
 	}
+	*/
 }

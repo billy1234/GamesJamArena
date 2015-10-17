@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 252fc26e8447f0c44abf2feb01df4ffd
+timeCreated: 1445062154
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Belly
+    100002: IK Chain003
+    100004: IK Chain004
+    100006: IK Chain005
+    100008: IK Chain006
+    100010: IK Chain007
+    100012: Kaiju_Unwrapped
+    100014: //RootNode
+    100016: Left Arm 1
+    100018: Left Arm 2
+    100020: Left Arm 3
+    100022: Left Arm 4
+    100024: Left Arm 5
+    100026: Left Leg 1
+    100028: Left Leg 2
+    100030: Left Leg 3
+    100032: Mouth 1
+    100034: Mouth 2
+    100036: Right Arm 1
+    100038: Right Arm 2
+    100040: Right Arm 3
+    100042: Right Arm 4
+    100044: Right Arm 5
+    100046: Right Leg 1
+    100048: Right Leg 2
+    100050: Right Leg 3
+    100052: Spine 1
+    100054: Spine 2
+    100056: Spine 3
+    100058: Spine 4
+    100060: Spine 5
+    100062: Spine Controller 1
+    100064: Spine Controller 2
+    100066: Spine Controller 3
+    100068: Spine Controller 4
+    100070: Spine Controller 5
+    400000: Belly
+    400002: IK Chain003
+    400004: IK Chain004
+    400006: IK Chain005
+    400008: IK Chain006
+    400010: IK Chain007
+    400012: Kaiju_Unwrapped
+    400014: //RootNode
+    400016: Left Arm 1
+    400018: Left Arm 2
+    400020: Left Arm 3
+    400022: Left Arm 4
+    400024: Left Arm 5
+    400026: Left Leg 1
+    400028: Left Leg 2
+    400030: Left Leg 3
+    400032: Mouth 1
+    400034: Mouth 2
+    400036: Right Arm 1
+    400038: Right Arm 2
+    400040: Right Arm 3
+    400042: Right Arm 4
+    400044: Right Arm 5
+    400046: Right Leg 1
+    400048: Right Leg 2
+    400050: Right Leg 3
+    400052: Spine 1
+    400054: Spine 2
+    400056: Spine 3
+    400058: Spine 4
+    400060: Spine 5
+    400062: Spine Controller 1
+    400064: Spine Controller 2
+    400066: Spine Controller 3
+    400068: Spine Controller 4
+    400070: Spine Controller 5
+    4300000: Kaiju_Unwrapped
+    7400000: Low_Poly_Kaiju08_walk
+    9500000: //RootNode
+    13700000: Kaiju_Unwrapped
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Low_Poly_Kaiju08_walk
+      takeName: Low_Poly_Kaiju08_walk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      - path: IK Chain005
+        weight: 1
+      - path: IK Chain006
+        weight: 1
+      - path: IK Chain007
+        weight: 1
+      - path: Kaiju_Unwrapped
+        weight: 1
+      - path: Spine 1
+        weight: 1
+      - path: Spine 1/Belly
+        weight: 1
+      - path: Spine 1/Left Leg 1
+        weight: 1
+      - path: Spine 1/Left Leg 1/Left Leg 2
+        weight: 1
+      - path: Spine 1/Left Leg 1/Left Leg 2/Left Leg 3
+        weight: 1
+      - path: Spine 1/Right Leg 1
+        weight: 1
+      - path: Spine 1/Right Leg 1/Right Leg 2
+        weight: 1
+      - path: Spine 1/Right Leg 1/Right Leg 2/Right Leg 3
+        weight: 1
+      - path: Spine 1/Spine 2
+        weight: 1
+      - path: Spine 1/Spine 2/Left Arm 1
+        weight: 1
+      - path: Spine 1/Spine 2/Left Arm 1/Left Arm 2
+        weight: 1
+      - path: Spine 1/Spine 2/Left Arm 1/Left Arm 2/Left Arm 3
+        weight: 1
+      - path: Spine 1/Spine 2/Left Arm 1/Left Arm 2/Left Arm 3/Left Arm 4
+        weight: 1
+      - path: Spine 1/Spine 2/Left Arm 1/Left Arm 2/Left Arm 3/Left Arm 4/Left Arm
+          5
+        weight: 1
+      - path: Spine 1/Spine 2/Right Arm 1
+        weight: 1
+      - path: Spine 1/Spine 2/Right Arm 1/Right Arm 2
+        weight: 1
+      - path: Spine 1/Spine 2/Right Arm 1/Right Arm 2/Right Arm 3
+        weight: 1
+      - path: Spine 1/Spine 2/Right Arm 1/Right Arm 2/Right Arm 3/Right Arm 4
+        weight: 1
+      - path: Spine 1/Spine 2/Right Arm 1/Right Arm 2/Right Arm 3/Right Arm 4/Right
+          Arm 5
+        weight: 1
+      - path: Spine 1/Spine 2/Spine 3
+        weight: 1
+      - path: Spine 1/Spine 2/Spine 3/Spine 4
+        weight: 1
+      - path: Spine 1/Spine 2/Spine 3/Spine 4/Mouth 1
+        weight: 1
+      - path: Spine 1/Spine 2/Spine 3/Spine 4/Mouth 1/Mouth 2
+        weight: 1
+      - path: Spine 1/Spine 2/Spine 3/Spine 4/Spine 5
+        weight: 1
+      - path: Spine Controller 1
+        weight: 1
+      - path: Spine Controller 1/Spine Controller 2
+        weight: 1
+      - path: Spine Controller 1/Spine Controller 3
+        weight: 1
+      - path: Spine Controller 1/Spine Controller 4
+        weight: 1
+      - path: Spine Controller 1/Spine Controller 5
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
