@@ -11,21 +11,10 @@ public class Health : MonoBehaviour
 		health += maxHealth;
 	}
 
-	/*
-	void Update () 
+	public virtual void addHealth(int healthAmount)
 	{
-		checkHealth();
+		health += Mathf.Abs(healthAmount);
 	}
-
-
-	private void checkHealth()this is inside of the take dmg function now
-	{
-		if(health <= 0)
-		{
-			death ();
-		}	
-	}
-	*/
 
 	public virtual void takeDamage(int damageAmount)
 	{
