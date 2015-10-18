@@ -68,7 +68,73 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy002
+        weight: 1
+      - path: Dummy003
+        weight: 1
+      - path: Dummy003/Right leg
+        weight: 1
+      - path: Dummy003/Right leg/Right foot
+        weight: 1
+      - path: IMP
+        weight: 1
+      - path: Left leg
+        weight: 1
+      - path: Left leg/Left foot
+        weight: 1
+      - path: lower back
+        weight: 1
+      - path: lower back/back
+        weight: 1
+      - path: lower back/back/head
+        weight: 1
+      - path: lower back/back/Left shoulder
+        weight: 1
+      - path: lower back/back/Left shoulder/Left arm
+        weight: 1
+      - path: lower back/back/Left wing
+        weight: 1
+      - path: lower back/back/right shoulder
+        weight: 1
+      - path: lower back/back/right shoulder/Right arm
+        weight: 1
+      - path: lower back/back/Right wing
+        weight: 1
+      - path: lower back/tail a
+        weight: 1
+      - path: lower back/tail a/tail b
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
