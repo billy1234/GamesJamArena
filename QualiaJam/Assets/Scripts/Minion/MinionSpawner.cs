@@ -5,33 +5,28 @@ public class MinionSpawner : MonoBehaviour
 {
 	public Transform[] spawnLocations;
 	public int spawnAmount;
+	public int spawnDelay;
 	public GameObject minion;
+	public GameObject portals;
 	// Use this for initialization
 	void Start () 
 	{
-		spawnMinions();
+		StartCoroutine(spawnMinions());
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	
-	private void spawnMinions()
+
+	private IEnumerator spawnMinions()
 	{
+		portals.SetActive(true);
+		
 		for(int i = 0; i < spawnLocations.Length; i++)
 		{
 			for(int x = 0; x < spawnAmount; x++)
 			{
-				StartCoroutine(createMinion(i));
+				yield return new WaitForSeconds(spawnDelay);
+				Instantiate(minion,spawnLocations[i].position,Quaternion.identity);
 			}
-			
 		}
-	}
-	
-	public IEnumerator createMinion(int spawnIndex)
-	{
-		yield return new WaitForSeconds(2f);
-		Instantiate(minion,spawnLocations[spawnIndex].position,Quaternion.identity);
+		
+		portals.SetActive(false);
 	}
 }
