@@ -6,12 +6,13 @@ public class MinionSpawner : MonoBehaviour
 	public Transform[] spawnLocations;
 	public int spawnAmount;
 	public int spawnDelay;
+	public int periodicDelay;
 	public GameObject minion;
 	public GameObject portals;
 	// Use this for initialization
-	void Start () 
+	void Awake () 
 	{
-		StartCoroutine(spawnMinions());
+		StartCoroutine(perodicSpawn());
 	}
 
 	private IEnumerator spawnMinions()
@@ -28,5 +29,14 @@ public class MinionSpawner : MonoBehaviour
 		}
 		
 		portals.SetActive(false);
+	}
+	
+	private IEnumerator perodicSpawn()
+	{	
+		while(Application.isPlaying == true)
+		{
+			StartCoroutine(spawnMinions());
+			yield return new WaitForSeconds(periodicDelay);
+		}
 	}
 }
