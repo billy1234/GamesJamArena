@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: c5728617e04157f4ea2a24e3ce90ce6a
+timeCreated: 1445141208
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: back
+    100002: head
+    100004: L arm
+    100006: L foot
+    100008: L leg
+    100010: L shoulder
+    100012: lower back
+    100014: master control
+    100016: master left arm
+    100018: master left leg
+    100020: master right arm
+    100022: master right leg
+    100024: //RootNode
+    100026: Point001
+    100028: R arm
+    100030: R foot
+    100032: R leg
+    100034: R shoulder
+    100036: RoadKillOut
+    400000: back
+    400002: head
+    400004: L arm
+    400006: L foot
+    400008: L leg
+    400010: L shoulder
+    400012: lower back
+    400014: master control
+    400016: master left arm
+    400018: master left leg
+    400020: master right arm
+    400022: master right leg
+    400024: //RootNode
+    400026: Point001
+    400028: R arm
+    400030: R foot
+    400032: R leg
+    400034: R shoulder
+    400036: RoadKillOut
+    4300000: RoadKillOut
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: RoadKillOut
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: master control
+        weight: 1
+      - path: master control/lower back
+        weight: 1
+      - path: master control/lower back/back
+        weight: 1
+      - path: master control/lower back/back/head
+        weight: 1
+      - path: master control/lower back/back/master left arm
+        weight: 1
+      - path: master control/lower back/back/master left arm/L shoulder
+        weight: 1
+      - path: master control/lower back/back/master left arm/L shoulder/L arm
+        weight: 1
+      - path: master control/lower back/back/master right arm
+        weight: 1
+      - path: master control/lower back/back/master right arm/R shoulder
+        weight: 1
+      - path: master control/lower back/back/master right arm/R shoulder/R arm
+        weight: 1
+      - path: master control/master left leg
+        weight: 1
+      - path: master control/master left leg/L leg
+        weight: 1
+      - path: master control/master left leg/L leg/L foot
+        weight: 1
+      - path: master control/master right leg
+        weight: 1
+      - path: master control/master right leg/R leg
+        weight: 1
+      - path: master control/master right leg/R leg/R foot
+        weight: 1
+      - path: Point001
+        weight: 1
+      - path: RoadKillOut
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
