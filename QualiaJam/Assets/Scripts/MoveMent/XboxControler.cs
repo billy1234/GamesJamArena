@@ -5,14 +5,15 @@ public enum PLAYER
 	PLAYER1,PLAYER2
 };
 [RequireComponent(typeof(FireProjectile))]
-public class XboxControler : BaseMove
+public class XboxControler : AnimatedMove
 {
 	public PLAYER player;
 	public float turnSpeed =5f;
 	private FireProjectile myProjectile;
 
-	void Awake()
+	protected override void Awake()
 	{
+		base.Awake();
 		myProjectile = gameObject.GetComponent<FireProjectile>();
 	}
 
