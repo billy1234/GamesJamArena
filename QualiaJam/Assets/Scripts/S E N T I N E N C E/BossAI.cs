@@ -110,4 +110,11 @@ public class BossAI : BaseAi
 		// Move slowly from our rotation to the rotation we want to go to by the damping slowness
 		transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * turnSpeed);
 	}
+
+	void getNewRandomTarget()
+	{
+		XboxControler[] players = GameObject.FindObjectsOfType<XboxControler>();
+
+		target = players[Random.Range(0,players.Length)].transform;
+	}
 }

@@ -6,7 +6,7 @@ public class DamageOnCollision : MonoBehaviour
 	public int damage;
 	public bool knockBack;
 	public float knockBackForce;
-
+	public float disableTime;
 	private void OnCollisionEnter(Collision col)
 	{
 
@@ -25,11 +25,22 @@ public class DamageOnCollision : MonoBehaviour
 				Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
 				if(rb != null)
 				{
-					print(rb.gameObject.name+this.name);
 					rb.velocity = Vector3.zero;
 					rb.AddForce((other.gameObject.transform.position - transform.position).normalized * knockBackForce,ForceMode.Impulse);
+					XboxControler player = other.GetComponent<XboxControler>();
+					if(player != null)
+					{
+						StartCoroutine(disable(player));
+					}
 				}
 			}
 		}
+	}
+
+	IEnumerator disable(XboxControler player)
+	{
+		player.enabled = false;
+		yield return new WaitForSeconds(disableTime);
+		player.enabled = true;
 	}
 }
