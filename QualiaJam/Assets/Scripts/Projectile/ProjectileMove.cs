@@ -3,8 +3,8 @@ using System.Collections;
 
 public class ProjectileMove : BaseMove
 {
-	void Update () 
+	protected virtual void FixedUpdate () 
 	{
-		base.move(-transform.forward, speed);
+		move(-transform.forward, speed);
 	}
 }

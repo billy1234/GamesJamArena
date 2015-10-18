@@ -9,7 +9,7 @@ public struct exitTimes
 	public int rangedExitTime;
 }
 [RequireComponent(typeof(BossHeath))]
-[RequireComponent(typeof(FireProjectile))]
+[RequireComponent(typeof(FireHoming))]
 public class BossAI : BaseAi
 {
 	protected BossHeath myHp;
@@ -17,13 +17,14 @@ public class BossAI : BaseAi
 	public exitTimes sateDurations;
 	public float turnSpeed;
 	public float projectileMaxAngle;
-	private FireProjectile myFire;
+	private FireHoming myFire;
 	public float rangedMinDistance =5f;
 	protected override void Awake()
 	{
 		base.Awake();
 		myHp = GetComponent<BossHeath>();
 		state = AISTATE.RANGED;
+		myFire = GetComponent<FireHoming>();
 	}
 
 	protected override void decision ()
@@ -43,17 +44,11 @@ public class BossAI : BaseAi
 			if(Vector3.Distance(transform.position, target.position) >rangedMinDistance)
 			{
 				myAgent.Stop();
-				print ("in range");
-				if ( Vector3.Angle(target.transform.forward, transform.position - target.transform.position) < projectileMaxAngle)
-				{
-					print ("shooting");
-					myFire.fire();
-				}
-				else
-				{
-					print ("aiming");
-					LookAt(target.position);
-				}
+				LookAt(target.position);
+				myFire.target = target;
+				myFire.fire();
+
+
 			}
 			else
 			{
