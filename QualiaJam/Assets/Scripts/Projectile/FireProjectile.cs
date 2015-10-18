@@ -35,7 +35,7 @@ public class FireProjectile : MonoBehaviour
 			}
             GameObject bulletInstance = Instantiate(projectile, hand.position, transform.rotation) as GameObject;
             bulletInstance.GetComponent<ProjectileMove>().speed += fireSpeed;
-			Destroy(bulletInstance,10f);
+			Destroy(bulletInstance,5f);
             StartCoroutine(coolDown());
             StartCoroutine(shakeCam());
         }

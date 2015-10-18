@@ -7,6 +7,7 @@ public class HomingMove : ProjectileMove
 
 	protected override void FixedUpdate()
 	{
-		rb.AddForce((target.position  -transform.position ).normalized *speed,ForceMode.Force);
+
+		rb.velocity = (target.position  -transform.position ).normalized *speed;
 	}
 }
