@@ -1,0 +1,488 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.049 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\user\Documents\GamesJamArena\QualiaJam\TestBuild_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 20b4 -> priority: 1 
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+in range
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+aiming
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Ran
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SuicideMelee.death () [0x00000] in <filename unknown>:0 
+  at Health.takeDamage (Int32 damageAmount) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.onCollide (UnityEngine.GameObject other) [0x00000] in <filename unknown>:0 
+  at DamageOnCollision.OnCollisionEnter (UnityEngine.Collision col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+switched To vunrable
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+switched To vunrable
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Minion(Clone) (SuicideMelee) has Died
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
