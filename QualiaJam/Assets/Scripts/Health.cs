@@ -5,8 +5,19 @@ public class Health : MonoBehaviour
 {
 	public int maxHealth;
 	private int health;
+	public int _hp
+	{
+		get
+		{
+			return health;
+		}
+		set
+		{
+			
+		}
+	}
 	// Use this for initialization
-	void Start () 
+	public virtual void Start () 
 	{
 		health += maxHealth;
 	}
