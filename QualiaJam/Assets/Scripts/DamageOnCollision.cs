@@ -25,6 +25,7 @@ public class DamageOnCollision : MonoBehaviour
 				Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
 				if(rb != null)
 				{
+					print(rb.gameObject.name+this.name);
 					rb.velocity = Vector3.zero;
 					rb.AddForce((other.gameObject.transform.position - transform.position).normalized * knockBackForce,ForceMode.Impulse);
 				}

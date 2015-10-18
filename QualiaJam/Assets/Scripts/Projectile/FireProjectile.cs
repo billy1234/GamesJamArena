@@ -17,6 +17,7 @@ public class FireProjectile : MonoBehaviour
     public float fireRate =3f;
     public shakeCamera camShakeSettings;
     private Quaternion oldRoataion;
+	protected BaseMove.AnimationEvent onFire;
     void Awake()
     {
         if(camShakeSettings.active)
@@ -28,6 +29,10 @@ public class FireProjectile : MonoBehaviour
     {
         if(canFire)
         {
+			if(onFire != null)
+			{
+				onFire();
+			}
             GameObject bulletInstance = Instantiate(projectile, hand.position, transform.rotation) as GameObject;
             bulletInstance.GetComponent<ProjectileMove>().speed += fireSpeed;
             StartCoroutine(coolDown());
