@@ -25,7 +25,7 @@ public class FireProjectile : MonoBehaviour
             oldRoataion = camShakeSettings.myCam.transform.localRotation;
         }
     }
-    public void fire()
+    public virtual void fire()
     {
         if(canFire)
         {
@@ -35,12 +35,13 @@ public class FireProjectile : MonoBehaviour
 			}
             GameObject bulletInstance = Instantiate(projectile, hand.position, transform.rotation) as GameObject;
             bulletInstance.GetComponent<ProjectileMove>().speed += fireSpeed;
+			Destroy(bulletInstance,10f);
             StartCoroutine(coolDown());
             StartCoroutine(shakeCam());
         }
     }
 	
-    private IEnumerator coolDown()
+    protected IEnumerator coolDown()
     {
         canFire = false;
         yield return new WaitForSeconds(fireRate);
@@ -57,7 +58,7 @@ public class FireProjectile : MonoBehaviour
             
     }
 
-    private IEnumerator shakeCam()
+    protected IEnumerator shakeCam()
     {
 
         for(int i =0; i < camShakeSettings.frameDuration; i++)
